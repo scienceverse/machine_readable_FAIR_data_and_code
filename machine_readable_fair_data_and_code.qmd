@@ -56,8 +56,14 @@ editor_options:
 <!--
 This was in the abstract, is maybe notes?
 Distinguish necessary from optional metadata. How do codebooks deal with units? Variable types 
---->
+-->
 ```
+
+<!--
+These two citations need to be added to the bib file:
+[WARNING] Citeproc: citation ROCrate2022 not found
+[WARNING] Citeproc: citation comprepro_2026 not found
+-->
 
 Access to the data and code that underlie findings in the scientific literature allows peers to scrutinize the evidential basis for empirical claims, and to increase the efficiency of knowledge generation through re-use. The [European Code of Conduct for Research Integrity](https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/european-code-of-conduct-for-research-integrity_horizon_en.pdf) states: "Researchers, research institutions, and organisations ensure that access to data is as open as possible, as closed as necessary, and where appropriate in line with the FAIR Principles (Findable, Accessible, Interoperable and Reusable) for data management." Similarly, the [Dutch Code of Conduct for Research Integrity](https://www.nwo.nl/sites/nwo/files/documents/Netherlands%2BCode%2Bof%2BConduct%2Bfor%2BResearch%2BIntegrity_2018_UK.pdf) states that: "Ensure that, in accordance with the FAIR principles, data is open and accessible to the extent possible and remains confidential to the extent necessary." Accordingly, research materials should be managed in accordance with the FAIR Principles [@wilkinson_fair_2016].
 
@@ -280,7 +286,7 @@ PsychDS provides a schema for describing data files in a JSON-formatted codebook
 | `bds_3` | Breakup Distress item 3 | 1 (Strongly disagree) to 5 (Strongly agree) | 99 | I am coping well. | reverse scored: 6 - bds_3 |
 | `bds_mean` | Breakup Distress mean score |  |  |  | mean of bds_1 to bds_10 after reversing bds_3 |
 
-: Variable codebook.
+: : Example of a codebook {#tbl-codebook}
 
 Although tabular codebooks can be created as .csv files, it may be most convenient to use a spreadsheet. When creating the codebook, the column names can be copied from the data file, and transposed (i.e., converted from one row into one column) before being pasted in the spreadsheet. This helps ensure that the column names in the data file and codebook match exactly. Make sure values are stored as text, as Excel might transform values such as `1-5` into a date such as `5-Jan`.
 
